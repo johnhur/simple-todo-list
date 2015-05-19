@@ -18,5 +18,10 @@ button.addEventListener('click', function(){
 })
 //var ul = document.querySelectorAll('li');
 ul.addEventListener('click', function(event) {
-	event.srcElement.className = "completed"
+	if (event.srcElement.className === "completed") {
+	event.srcElement.className = "";
+	}
+	else {
+		event.srcElement.className = "completed";
+	}
 })
